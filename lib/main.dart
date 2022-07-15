@@ -1,7 +1,6 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_crashlytics/firebase_crashlytics.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_downloader/flutter_downloader.dart';
 import 'package:high_in_flutter/configs/styles.dart';
 import 'package:high_in_flutter/repository/local_data.dart';
 import 'package:high_in_flutter/views/table_of_contents/table_of_contents.dart';
