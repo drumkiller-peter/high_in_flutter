@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "117361141778",
+    "project_id": "highinflutter-31bdb",
+    "storage_bucket": "highinflutter-31bdb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:117361141778:android:4cbc5acbfd33de14c390cb",
+        "android_client_info": {
+          "package_name": "com.highinflutter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "117361141778-p3u16287hmvjab1m3tqelnkqh023k7oj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.highinflutter",
+            "certificate_hash": "8cb238fd069dbce2f7422e5800b1d875d135a157"
+          }
+        },
+        {
+          "client_id": "117361141778-0688cpaho0f1vcn98ujlqd0fcuj7kdh8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDzMuGNAhyOJuW3aYgWymIPBUpo3kjYuWw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "117361141778-0688cpaho0f1vcn98ujlqd0fcuj7kdh8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
