@@ -60,7 +60,7 @@ class AddAppLogoScreen extends StatelessWidget {
                   color: AppColors.spotifyGreen,
                   borderRadius: BorderRadius.circular(8),
                 ),
-                child: Text("https://pub.dev/packages/url_launcher"),
+                child: const Text("https://pub.dev/packages/url_launcher"),
               ),
             ),
             const SizedBox(
