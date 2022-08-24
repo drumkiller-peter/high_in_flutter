@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:high_in_flutter/views/adding_app_logo/add_app_logo.dart';
+import 'package:high_in_flutter/views/adding_marquee/adding_marquee.dart';
 import 'package:high_in_flutter/views/dark_mode_implementation/dark_mode_screen.dart';
 import 'package:high_in_flutter/views/page_storage_example/page_storage_example.dart';
+import 'package:high_in_flutter/views/singleton_in_dart/singleton_in_dart.dart';
 import 'package:high_in_flutter/views/spotify_clone/spotify_player.dart';
 
 class TableOfContent extends StatelessWidget {
@@ -14,6 +16,8 @@ class TableOfContent extends StatelessWidget {
       "Preserve Scrolling State",
       "Add Flutter App logo",
       "Spotify Clone",
+      "Marquee Example",
+      "Singleton in Dart/Flutter",
     ];
     return Scaffold(
       appBar: AppBar(
@@ -49,7 +53,6 @@ gotoScreen(int index, BuildContext context) {
     case 1:
       Navigator.push(context,
           MaterialPageRoute(builder: (context) => const PageStorageExample()));
-
       break;
     case 2:
       Navigator.push(context,
@@ -58,6 +61,16 @@ gotoScreen(int index, BuildContext context) {
     case 3:
       Navigator.push(context,
           MaterialPageRoute(builder: (context) => const SpotifyPlayerScreen()));
+
+      break;
+    case 4:
+      Navigator.push(context,
+          MaterialPageRoute(builder: (context) => const AddingMarquee()));
+
+      break;
+    case 5:
+      Navigator.push(context,
+          MaterialPageRoute(builder: (context) => const SingletonInDartFlutter()));
 
       break;
     default:
