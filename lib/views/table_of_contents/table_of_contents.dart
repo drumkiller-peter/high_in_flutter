@@ -5,6 +5,9 @@ import 'package:high_in_flutter/views/dark_mode_implementation/dark_mode_screen.
 import 'package:high_in_flutter/views/page_storage_example/page_storage_example.dart';
 import 'package:high_in_flutter/views/singleton_in_dart/singleton_in_dart.dart';
 import 'package:high_in_flutter/views/spotify_clone/spotify_player.dart';
+import 'package:provider/provider.dart';
+
+import '../scrolling_behaviour/scrolling_behaviour_in_dart.dart';
 
 class TableOfContent extends StatelessWidget {
   const TableOfContent({Key? key}) : super(key: key);
@@ -18,6 +21,7 @@ class TableOfContent extends StatelessWidget {
       "Spotify Clone",
       "Marquee Example",
       "Singleton in Dart/Flutter",
+      "Scroll Behaviour"
     ];
     return Scaffold(
       appBar: AppBar(
@@ -69,8 +73,20 @@ gotoScreen(int index, BuildContext context) {
 
       break;
     case 5:
-      Navigator.push(context,
-          MaterialPageRoute(builder: (context) => const SingletonInDartFlutter()));
+      Navigator.push(
+          context,
+          MaterialPageRoute(
+              builder: (context) => const SingletonInDartFlutter()));
+
+      break;
+    case 6:
+      Navigator.push(
+          context,
+          MaterialPageRoute(
+              builder: (context) => ChangeNotifierProvider(
+                  create: (context) => MyScrollProvider(),
+                  lazy: true,
+                  builder: (context, _) => const ScrollingBehaviourInDart())));
 
       break;
     default:
