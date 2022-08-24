@@ -9,7 +9,8 @@ This project contains following Examples
  - Preserving Scrolling State of scrolling widgets
  - Adding App logo
  - Simple Music Player Clone (Spotify)
- - Will Add More Soon....
+ - Marquee
+ - Singleton in Dart/Flutter
 
 <h1 align="left">Connect with me:</h1>
 <p align="left">
