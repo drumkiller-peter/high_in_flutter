@@ -1,5 +1,3 @@
-import 'package:firebase_core/firebase_core.dart';
-import 'package:firebase_crashlytics/firebase_crashlytics.dart';
 import 'package:flutter/material.dart';
 import 'package:high_in_flutter/configs/styles.dart';
 import 'package:high_in_flutter/repository/local_data.dart';
@@ -10,9 +8,9 @@ import 'views/dark_mode_implementation/dark_mode_provider.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
+  // await Firebase.initializeApp();
   await LocalRepositoryManager.initializeSharedPreferences();
-  FlutterError.onError = FirebaseCrashlytics.instance.recordFlutterError;
+  // FlutterError.onError = FirebaseCrashlytics.instance.recordFlutterError;
 
   runApp(
     ChangeNotifierProvider(
@@ -30,6 +28,7 @@ class MyApp extends StatelessWidget {
     var _provider = Provider.of<DarkModeProvider>(context);
     _provider.getDarkTheme();
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: Styles.themeData(_provider.darkTheme, context),
       home: const TableOfContent(),

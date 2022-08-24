@@ -16,18 +16,16 @@ dependencies:
   shared_preferences: ^2.0.15
   provider: ^6.0.3
   google_fonts: ^3.0.1
-  syncfusion_flutter_sliders: ^20.2.36
   dio: ^4.0.6
   path_provider: ^2.0.11
-  open_file: ^3.2.1
   permission_handler: ^10.0.0
-  flutter_downloader: ^1.7.4
   just_audio: ^0.9.27
   cached_network_image: ^3.2.0
   firebase_crashlytics: ^2.8.5
   firebase_core: ^1.19.2
   smooth_page_indicator: ^1.0.0+2
   url_launcher: ^6.1.5
+  marquee: ^2.2.1
 
 
 dev_dependencies:
@@ -36,6 +34,19 @@ dev_dependencies:
   flutter_lints: ^1.0.0
   flutter_launcher_icons: ^0.9.2
   change_app_package_name: ^1.1.0
+  build_runner: ^2.2.0
+  msix: ^3.6.3
+
+msix_config:
+  display_name: High in Flutter
+  publisher_display_name: HighInFlutter
+  identity_name: com.highinflutter
+  msix_version: 0.0.0.1
+  logo_path: assets/icon/logo.png
+  capabilities: internetClient, location
+  certificate_path: C:\drumkiller\keys\highinflutterCertificate.pfx
+  certificate_password: password123
+
 
 
 flutter_icons:
@@ -51,3 +62,4 @@ flutter:
     - assets/images/app_logo_example/
     - assets/images/spotify_assets/
     - assets/images/spotify_assets/mp3/
+    - assets/images/singleton/

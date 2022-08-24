@@ -1,7 +1,6 @@
 import 'dart:developer';
 
 import 'package:flutter/material.dart';
-import 'package:high_in_flutter/configs/constants.dart';
 import 'package:just_audio/just_audio.dart';
 
 class SpotifyProvider extends ChangeNotifier {
@@ -39,7 +38,9 @@ class SpotifyProvider extends ChangeNotifier {
 
   initializeAudioPlayer() async {
     try {
-      await player.setAsset(AppConstants.mp3Assest);
+      // await player.setAsset(AppConstants.mp3Assest);// unComment this for loading from Assest
+      await player.setUrl(
+          "https://p.scdn.co/mp3-preview/40821a698364f0bf84b15bcc71a40ef813fff0e1?cid=774b29d4f13844c495f206cafdad9c86");
       finalTime = getDuration(player.duration!);
       sliderMaxValue = double.parse(player.duration!.inSeconds.toString());
       pausePlayPlayer();
@@ -106,9 +107,9 @@ class SpotifyProvider extends ChangeNotifier {
     notifyListeners();
   }
 
-  disposeAudioPlayer() {
+  disposeAudioPlayer() async {
     player.positionStream.listen((event) {}).cancel();
-    player.stop();
-    player.dispose();
+    await player.stop();
+    await player.dispose();
   }
 }
