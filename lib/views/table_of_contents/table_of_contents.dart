@@ -3,8 +3,10 @@ import 'package:high_in_flutter/views/adding_app_logo/add_app_logo.dart';
 import 'package:high_in_flutter/views/adding_marquee/adding_marquee.dart';
 import 'package:high_in_flutter/views/dark_mode_implementation/dark_mode_screen.dart';
 import 'package:high_in_flutter/views/page_storage_example/page_storage_example.dart';
+import 'package:high_in_flutter/views/shimmer_effect/shimmer_loading_screen.dart';
 import 'package:high_in_flutter/views/singleton_in_dart/singleton_in_dart.dart';
 import 'package:high_in_flutter/views/spotify_clone/spotify_player.dart';
+import 'package:high_in_flutter/views/text_field_properties/text_field_properties.dart';
 import 'package:provider/provider.dart';
 
 import '../scrolling_behaviour/scrolling_behaviour_in_dart.dart';
@@ -21,7 +23,9 @@ class TableOfContent extends StatelessWidget {
       "Spotify Clone",
       "Marquee Example",
       "Singleton in Dart/Flutter",
-      "Scroll Behaviour"
+      "Scroll Behaviour",
+      "Text Field Properties",
+      "Shimmers",
     ];
     return Scaffold(
       appBar: AppBar(
@@ -87,6 +91,19 @@ gotoScreen(int index, BuildContext context) {
                   create: (context) => MyScrollProvider(),
                   lazy: true,
                   builder: (context, _) => const ScrollingBehaviourInDart())));
+
+      break;
+    case 7:
+      Navigator.push(
+          context,
+          MaterialPageRoute(
+              builder: (context) => const TextFieldPropertiesScreen()));
+      break;
+    case 8:
+      Navigator.push(
+          context,
+          MaterialPageRoute(
+              builder: (context) => const ShimmerLoadingScreen()));
 
       break;
     default:

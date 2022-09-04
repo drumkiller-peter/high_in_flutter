@@ -26,6 +26,7 @@ dependencies:
   smooth_page_indicator: ^1.0.0+2
   url_launcher: ^6.1.5
   marquee: ^2.2.1
+  shimmer: ^2.0.0
 
 
 dev_dependencies:
