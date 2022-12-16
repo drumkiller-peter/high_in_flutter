@@ -12,6 +12,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  quick_actions: ^1.0.1
   cupertino_icons: ^1.0.2
   shared_preferences: ^2.0.15
   provider: ^6.0.3
@@ -27,6 +28,7 @@ dependencies:
   url_launcher: ^6.1.5
   marquee: ^2.2.1
   shimmer: ^2.0.0
+  intl: ^0.17.0
 
 
 dev_dependencies:

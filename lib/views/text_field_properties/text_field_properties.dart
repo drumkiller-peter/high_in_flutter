@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -18,13 +20,22 @@ class _TextFieldPropertiesScreenState extends State<TextFieldPropertiesScreen> {
         const Text("Name"),
         Expanded(
           child: TextFormField(
+            validator: (val) {
+              return null;
+
+              // if(val.contains(RegExp('r[A-Z]')))
+            },
             inputFormatters: [
-              FilteringTextInputFormatter.digitsOnly,
+              FilteringTextInputFormatter.deny(".."),
             ],
             onChanged: (val) {
               if (val.isNotEmpty) {
                 setState(() {
-                  myNumber = double.parse(val);
+                  try {
+                    myNumber = double.parse(val);
+                  } catch (e) {
+                    log(e.toString());
+                  }
                 });
               }
             },

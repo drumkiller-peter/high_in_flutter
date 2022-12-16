@@ -1,3 +1,5 @@
+//*! this is an example for ImageSwiper and also Singleton in dart */
+
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:high_in_flutter/configs/app_colors.dart';
@@ -130,7 +132,12 @@ class CustomAppBar extends StatelessWidget with PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      title: Text(titleText),
+      title: Text(
+        titleText,
+        style: Theme.of(context).textTheme.headline6!.copyWith(
+              color: AppColors.white,
+            ),
+      ),
       backgroundColor: AppColors.spotifyGreenDark,
       actions: const [
         Icon(

@@ -61,7 +61,7 @@ class SpotifyPlayerScreen extends StatelessWidget {
                       SizedBox(
                         height: _size.height * 0.025,
                       ),
-                      const SufflePrevPlayNextButtonWidget(),
+                      const ShufflePrevPlayNextButtonWidget(),
                       SizedBox(
                         height: _size.height * 0.025,
                       ),

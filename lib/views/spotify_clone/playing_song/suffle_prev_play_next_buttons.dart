@@ -4,8 +4,8 @@ import 'package:high_in_flutter/configs/constants.dart';
 import 'package:high_in_flutter/views/spotify_clone/spotify_provider/spotify_provider.dart';
 import 'package:provider/provider.dart';
 
-class SufflePrevPlayNextButtonWidget extends StatelessWidget {
-  const SufflePrevPlayNextButtonWidget({Key? key}) : super(key: key);
+class ShufflePrevPlayNextButtonWidget extends StatelessWidget {
+  const ShufflePrevPlayNextButtonWidget({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

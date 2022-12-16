@@ -16,6 +16,8 @@ class AppConstants {
   //* dummy NEtwork image Path
   static const dummyNetworkImagePath =
       'https://media.gettyimages.com/photos/lovely-woman-picture-id1139926360?s=612x612';
+  static const dummyNetworkImagePath2 =
+      "https://cdn.britannica.com/99/84699-050-32104EC9/Close-up-veins-leaf.jpg";
 
   //* Singleton Example Asset
   static const singleton1 = "assets/images/singleton/1.png";
